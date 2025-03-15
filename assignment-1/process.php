@@ -3,7 +3,6 @@ $name = $email = $password = $confirm_password = "";
 $errors = [];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Sanitize and validate the name
     if (empty(trim($_POST["name"]))) {
         $errors['name'] = "Name cannot be empty.";
     } else {
